@@ -132,16 +132,16 @@
     }
     .video-section{
         padding-top: 10px;
-        .video-container{
+        .course-container{
             width: 960px;
             margin: 0 auto;
-            .video-title{
+            .course-title{
                 position: relative;
                 margin-bottom: 30px;
                 img{
                     width: 140px;
                 }
-                .video-title-item{
+                .course-title-item{
                     position: absolute;
                     top: -9px;
                     left: 22px;
@@ -149,7 +149,7 @@
                     font-weight: 600;
                     color: #153188;
                 }
-                .video-title-describe{
+                .course-title-describe{
                     position: absolute;
                     top: 17px;
                     left: 17px;
@@ -157,33 +157,37 @@
                     color: #999999;
                 }
             }
-            .video-content{
+            .course-content{
                 height: 540px;
                 margin-bottom:8px;
-                .video-item{
+                .course-item{
                     width:960px;
                     height:540px;
                 }
             }
-            .video-course-title{
+        }
+        .video-container{
+            width: 960px;
+            margin: 0 auto;
+            .video-container-title{
                 font-size: 18px;
                 color: #333333;
                 line-height: 50px;
             }
-            .video-course-describe{
+            .video-container-describe{
                 font-size: 12px;
                 color: #999999;
                 margin-bottom: 20px;
             }
-            .video-course{
+            .video-content{
                 display: flex;
                 margin-bottom: 60px;
-                .video-course-left{
+                .video-content-left{
                     display: flex;
                     flex-direction: column;
                     width: 700px;
-                    .video-course-item{
-                        .video-item-title{
+                    .video-content-list{
+                        .video-list-title{
                             display: flex;
                             align-items: center;
                             background-color: #f7f7f7;
@@ -207,8 +211,8 @@
                                 margin-right: 20px;
                             }
                         }
-                        .video-item-text{
-                            .video-text-item{
+                        .video-list-item{
+                            .video-item-chapter{
                                 display: flex;
                                 align-items:center;
                                 height:39px;
@@ -216,27 +220,27 @@
                                 font-size: 12px;
                                 color: #666666;
                                 cursor: pointer;
-                                .video-text-font{
+                                .video-chapter-font{
                                     margin-left: 50px;
                                     flex: 1;
                                 }
-                                .video-text-time{
+                                .video-chapter-time{
                                     margin-right: 20px;
                                 }
                             }
                         }
                     }
-                    .video-text-item :hover{
+                    .video-item-chapter :hover{
                         color: #00a8ff;
                     }
-                    .active .video-item-title{
+                    .active .video-list-title{
                         background-color: #dddcdc;
                         .video-title-mark{
                             transform: rotate(-90deg)
                         }
                     }
                 }
-                .video-coures-right{
+                .video-content-right{
                     margin-left: 29px;
                     width: 230px;
                     .video-right-information{
@@ -362,6 +366,7 @@
                 }
             }
         }
+        
     }
     .teacher-section{
         padding-top: 10px;

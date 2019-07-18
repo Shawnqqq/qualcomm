@@ -131,18 +131,18 @@
 .body-page .video-section {
   padding-top: 10px;
 }
-.body-page .video-section .video-container {
+.body-page .video-section .course-container {
   width: 960px;
   margin: 0 auto;
 }
-.body-page .video-section .video-container .video-title {
+.body-page .video-section .course-container .course-title {
   position: relative;
   margin-bottom: 30px;
 }
-.body-page .video-section .video-container .video-title img {
+.body-page .video-section .course-container .course-title img {
   width: 140px;
 }
-.body-page .video-section .video-container .video-title .video-title-item {
+.body-page .video-section .course-container .course-title .course-title-item {
   position: absolute;
   top: -9px;
   left: 22px;
@@ -150,65 +150,69 @@
   font-weight: 600;
   color: #153188;
 }
-.body-page .video-section .video-container .video-title .video-title-describe {
+.body-page .video-section .course-container .course-title .course-title-describe {
   position: absolute;
   top: 17px;
   left: 17px;
   font-size: 14px;
   color: #999999;
 }
-.body-page .video-section .video-container .video-content {
+.body-page .video-section .course-container .course-content {
   height: 540px;
   margin-bottom: 8px;
 }
-.body-page .video-section .video-container .video-content .video-item {
+.body-page .video-section .course-container .course-content .course-item {
   width: 960px;
   height: 540px;
 }
-.body-page .video-section .video-container .video-course-title {
+.body-page .video-section .video-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.body-page .video-section .video-container .video-container-title {
   font-size: 18px;
   color: #333333;
   line-height: 50px;
 }
-.body-page .video-section .video-container .video-course-describe {
+.body-page .video-section .video-container .video-container-describe {
   font-size: 12px;
   color: #999999;
   margin-bottom: 20px;
 }
-.body-page .video-section .video-container .video-course {
+.body-page .video-section .video-container .video-content {
   display: flex;
   margin-bottom: 60px;
 }
-.body-page .video-section .video-container .video-course .video-course-left {
+.body-page .video-section .video-container .video-content .video-content-left {
   display: flex;
   flex-direction: column;
   width: 700px;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-title {
   display: flex;
   align-items: center;
   background-color: #f7f7f7;
   height: 40px;
   border-top: 1px solid #e4e4e4;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title .video-title-mark {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-title .video-title-mark {
   width: 16px;
   height: 9px;
   margin: 0px 12px 0 22px;
   transform: rotate(0deg);
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title .video-title-font {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-title .video-title-font {
   font-size: 14px;
   color: #333333;
   font-weight: 600;
   flex: 1;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title .video-title-download {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-title .video-title-download {
   width: 16px;
   height: 15px;
   margin-right: 20px;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-text .video-text-item {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-item .video-item-chapter {
   display: flex;
   align-items: center;
   height: 39px;
@@ -217,63 +221,63 @@
   color: #666666;
   cursor: pointer;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-text .video-text-item .video-text-font {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-item .video-item-chapter .video-chapter-font {
   margin-left: 50px;
   flex: 1;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-text .video-text-item .video-text-time {
+.body-page .video-section .video-container .video-content .video-content-left .video-content-list .video-list-item .video-item-chapter .video-chapter-time {
   margin-right: 20px;
 }
-.body-page .video-section .video-container .video-course .video-course-left .video-text-item :hover {
+.body-page .video-section .video-container .video-content .video-content-left .video-item-chapter :hover {
   color: #00a8ff;
 }
-.body-page .video-section .video-container .video-course .video-course-left .active .video-item-title {
+.body-page .video-section .video-container .video-content .video-content-left .active .video-list-title {
   background-color: #dddcdc;
 }
-.body-page .video-section .video-container .video-course .video-course-left .active .video-item-title .video-title-mark {
+.body-page .video-section .video-container .video-content .video-content-left .active .video-list-title .video-title-mark {
   transform: rotate(-90deg);
 }
-.body-page .video-section .video-container .video-course .video-coures-right {
+.body-page .video-section .video-container .video-content .video-content-right {
   margin-left: 29px;
   width: 230px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information {
   height: 330px;
   border-bottom: 1px solid #f5f5f5;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-title {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-title {
   font-size: 16px;
   color: #333333;
   font-weight: 600;
   margin-bottom: 12px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-text {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-text {
   font-size: 12px;
   color: #999999;
   line-height: 20px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-text-font {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-text-font {
   font-size: 12px;
   color: #333333;
   line-height: 20px;
   margin-bottom: 15px;
   letter-spacing: 0px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .height-30 {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .height-30 {
   margin-bottom: 10px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-number {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-number {
   font-size: 11px;
   color: #666666;
   letter-spacing: 0px;
   margin-left: 10px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-tag {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-tag {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-tag .video-tag-item {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-tag .video-tag-item {
   height: 20px;
   background-color: #f7f7f7;
   font-size: 12px;
@@ -283,19 +287,19 @@
   padding: 0 5px 0 5px;
   border-radius: 5px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-tag .video-tag-item:hover {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-information .video-information-tag .video-tag-item:hover {
   background-color: #e4e4e4;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-title {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-title {
   font-size: 16px;
   color: #333333;
   line-height: 50px;
   margin-bottom: 5px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-twitter {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-twitter {
   display: flex;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-twitter .video-twitter-image {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-twitter .video-twitter-image {
   width: 45px;
   height: 45px;
   border: 1px solid#ff7455;
@@ -303,17 +307,17 @@
   text-align: center;
   line-height: 50px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-twitter .video-twitter-font {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-twitter .video-twitter-font {
   font-size: 12px;
   color: #666666;
   line-height: 45px;
   margin-left: 10px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq {
   display: flex;
   margin-top: 15px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-image {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-image {
   width: 45px;
   height: 45px;
   border: 1px solid#06aaff;
@@ -321,21 +325,21 @@
   text-align: center;
   line-height: 52px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-item {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   position: relative;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-font {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-font {
   font-size: 12px;
   color: #666666;
   margin-bottom: 8px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link {
   display: flex;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .video-link-join {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .video-link-join {
   height: 22px;
   background-color: #00b1ff;
   border-radius: 2px;
@@ -346,10 +350,10 @@
   padding: 0 12px;
   margin-right: 10px;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .qrcode:hover + .video-link-qrcode {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .qrcode:hover + .video-link-qrcode {
   display: block;
 }
-.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .video-link-qrcode {
+.body-page .video-section .video-container .video-content .video-content-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .video-link-qrcode {
   display: none;
   position: absolute;
   top: 50px;

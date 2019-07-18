@@ -14,12 +14,12 @@ const PAGE={
         this.swiper()
     },
     bind:function(){
-        $('.video-item-title').on('click',this.hide);
+        $('.video-list-title').on('click',this.hide);
         // $('#teacher-left').on('click',this.leftItem);
         // $('#teacher-right').on('click',this.rightItem);
         $(window).on('scroll',this.refresh);
         $('.navigation-item').on('click',this.positionNav)
-        $('.video-text-item').on('click',this.video)
+        $('.video-item-chapter').on('click',this.video)
     },
     refresh:function(){
         PAGE.fixedNav()
@@ -78,9 +78,9 @@ const PAGE={
           })        
     },
     video:function(){
-        let videoScr = this.dataset.scr
-        $('#video-item').html(`<source src='${videoScr}'>`);
-        
+        let videoScr = $(this).data('scr')
+        $('#course-myvideo').attr('src',`${videoScr}`);
+        $('#course-myvideo').trigger('play')
     }
     // clone:function(){
     //     let itemLength = $('.teacher-item').length
