@@ -10,14 +10,16 @@ const PAGE={
     },
     init:function(){
         this.bind()
-        this.clone()
+        //this.clone()
+        this.swiper()
     },
     bind:function(){
         $('.video-item-title').on('click',this.hide);
-        $('#teacher-left').on('click',this.leftItem);
-        $('#teacher-right').on('click',this.rightItem);
+        // $('#teacher-left').on('click',this.leftItem);
+        // $('#teacher-right').on('click',this.rightItem);
         $(window).on('scroll',this.refresh);
         $('.navigation-item').on('click',this.positionNav)
+        $('.video-text-item').on('click',this.video)
     },
     refresh:function(){
         PAGE.fixedNav()
@@ -64,43 +66,59 @@ const PAGE={
         $(this).next().slideToggle();
         $(this).parent().toggleClass('active')
     },
-    clone:function(){
-        let itemLength = $('.teacher-item').length
-        for(let i=0;i<4;i++){
-            $($('.teacher-item')[i]).clone().appendTo('#teacher-list')
-        }
-        $($('.teacher-item')[itemLength-1]).clone().prependTo('#teacher-list')
-        let index = PAGE.data.index;
-        let itemWidth =PAGE.data.itemWidth;
-        PAGE.data.itemNumber = itemLength;
-        PAGE.data.itemLeft = -(itemWidth+itemWidth*index)
-        PAGE.goIndex(index);
+    swiper:function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            // direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 4,
+          })        
     },
-    goIndex:function(index){
-        let itemNumber =PAGE.data.itemNumber;
-        let itemWidth = PAGE.data.itemWidth;
-        let itemLeft= -(itemWidth+itemWidth*index)
-        $('#teacher-list').stop().animate({left:`${itemLeft}px`},500,function(){
-            if(index === -1){
-                index =itemNumber-1;
-                let lastLeft = -(itemWidth+itemWidth*index)
-                $('#teacher-list').css('left',`${lastLeft}px`)
-            }
-            if(index === itemNumber){
-                index = 0;
-                let firstLeft =-(itemWidth+itemWidth*index)
-                $('#teacher-list').css('left',`${firstLeft}px`)
-            }
-            PAGE.data.index=index
-        })
-    },
-    leftItem:function(){
-        let index= PAGE.data.index;
-        PAGE.goIndex(index-1);
-    },
-    rightItem:function(){
-        let index= PAGE.data.index;
-        PAGE.goIndex(index+1);
+    video:function(){
+        let videoScr = this.dataset.scr
+        $('#video-item').html(`<source src='${videoScr}'>`);
+        
     }
+    // clone:function(){
+    //     let itemLength = $('.teacher-item').length
+    //     for(let i=0;i<4;i++){
+    //         $($('.teacher-item')[i]).clone().appendTo('#teacher-list')
+    //     }
+    //     $($('.teacher-item')[itemLength-1]).clone().prependTo('#teacher-list')
+    //     let index = PAGE.data.index;
+    //     let itemWidth =PAGE.data.itemWidth;
+    //     PAGE.data.itemNumber = itemLength;
+    //     PAGE.data.itemLeft = -(itemWidth+itemWidth*index)
+    //     PAGE.goIndex(index);
+    // },
+    // goIndex:function(index){
+    //     let itemNumber =PAGE.data.itemNumber;
+    //     let itemWidth = PAGE.data.itemWidth;
+    //     let itemLeft= -(itemWidth+itemWidth*index)
+    //     $('#teacher-list').stop().animate({left:`${itemLeft}px`},500,function(){
+    //         if(index === -1){
+    //             index =itemNumber-1;
+    //             let lastLeft = -(itemWidth+itemWidth*index)
+    //             $('#teacher-list').css('left',`${lastLeft}px`)
+    //         }
+    //         if(index === itemNumber){
+    //             index = 0;
+    //             let firstLeft =-(itemWidth+itemWidth*index)
+    //             $('#teacher-list').css('left',`${firstLeft}px`)
+    //         }
+    //         PAGE.data.index=index
+    //     })
+    // },
+    // leftItem:function(){
+    //     let index= PAGE.data.index;
+    //     PAGE.goIndex(index-1);
+    // },
+    // rightItem:function(){
+    //     let index= PAGE.data.index;
+    //     PAGE.goIndex(index+1);
+    // }
 }
 PAGE.init()
