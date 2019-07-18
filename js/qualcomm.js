@@ -51,7 +51,7 @@ const PAGE={
         let index = data-1;
         let offsetTop;
         if(index<4){
-            offsetTop = $('.navcontent')[index].offsetTop
+            offsetTop = $('.navcontent')[index].offsetTop-60
         }else{
             offsetTop = $('.navcontent')[index].offsetTop-500
         }
