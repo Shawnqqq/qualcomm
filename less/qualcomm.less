@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.head-page{
+    width: 960px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    .head-logo{
+        flex: 1
+    }
+    .uesr{
+        font-size: 12px;
+        color:#666666; 
+        line-height: 70px;
+    }
+    .head-uesr{
+        margin: 0 12px;
+    }
+    
+}
+.body-page{
+    .banner-section{
+        background-image: url(../img/qualcomm-banner-Bg.png);
+        height: 425px;
+        .banner-container{
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            .banner-image{
+                margin-top: 120px;
+            }
+            .banner-describe{
+                position: absolute;
+                top: 28%;
+                font-size: 22px;
+                color: #61aceb;
+            }
+            .banner-title{
+                position: absolute;
+                top: 40%;
+                font-size: 40px;
+                color: #ffffff;
+            }
+            .banner-logo{
+                margin: 20px 40px 0 0;
+                display: flex;
+                .banner-logo-mark{
+                    width: 1px;
+                    height: 30px;
+                    background-color: #ffffff;
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+    .navigation-section{
+        background-color:rgba(21, 49, 136, 0.95);
+        height: 70px;
+        .navigation-container{
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            .navigation-item{
+                width: 192px;
+                text-align: center;
+                line-height: 70px;
+                font-size: 16px;
+                color: #ffffff;
+                cursor: pointer;
+            }
+            .navigation-item.active{
+                background-color: #374d92;
+            }
+        }
+        .navigation-item:hover{
+            background-color: #2d4694
+        }
+    }
+    .navigation-section.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .introduction-section{
+        margin: 60px 0;
+        width: 100%;
+        padding-top: 10px;
+        .introduction-container{
+            width: 960px;
+            margin: 0 auto;
+            .introduction-title{
+                position: relative;
+                margin-bottom: 30px;
+                img{
+                    width: 140px;
+                }
+                .introduction-title-item{
+                    position: absolute;
+                    top: -9px;
+                    left: 22px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #153188;
+                }
+                .introduction-title-describe{
+                    position: absolute;
+                    top: 17px;
+                    left: 22px;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+            .introduction-text{
+                font-size: 14px;
+                color: #333333;
+                letter-spacing: normal;
+                line-height: 30px;
+            }
+        }
+    }
+    .video-section{
+        padding-top: 10px;
+        .video-container{
+            width: 960px;
+            margin: 0 auto;
+            .video-title{
+                position: relative;
+                margin-bottom: 30px;
+                img{
+                    width: 140px;
+                }
+                .video-title-item{
+                    position: absolute;
+                    top: -9px;
+                    left: 22px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #153188;
+                }
+                .video-title-describe{
+                    position: absolute;
+                    top: 17px;
+                    left: 17px;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+            .video-content{
+                height: 540px;
+                margin-bottom:8px;
+            }
+            .video-course-title{
+                font-size: 18px;
+                color: #333333;
+                line-height: 50px;
+            }
+            .video-course-describe{
+                font-size: 12px;
+                color: #999999;
+                margin-bottom: 20px;
+            }
+            .video-course{
+                display: flex;
+                margin-bottom: 60px;
+                .video-course-left{
+                    display: flex;
+                    flex-direction: column;
+                    width: 700px;
+                    .video-course-item{
+                        .video-item-title{
+                            display: flex;
+                            align-items: center;
+                            background-color: #f7f7f7;
+                            height: 40px;
+                            border-top: 1px solid #e4e4e4;
+                            .video-title-mark{
+                                width: 16px;
+                                height: 9px;
+                                margin: 0px 12px 0 22px;
+                                transform: rotate(0deg)
+                            }
+                            .video-title-font{
+                                font-size: 14px;
+                                color: #333333;
+                                font-weight: 600;
+                                flex: 1;
+                            }
+                            .video-title-download{
+                                width: 16px;
+                                height: 15px;
+                                margin-right: 20px;
+                            }
+                        }
+                        .video-item-text{
+                            .video-text-item{
+                                display: flex;
+                                align-items:center;
+                                height:39px;
+                                border-bottom: 1px solid #f5f5f5;
+                                font-size: 12px;
+                                color: #666666;
+                                .video-text-font{
+                                    margin-left: 50px;
+                                    flex: 1;
+                                }
+                                .video-text-time{
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .active .video-item-title{
+                        background-color: #dddcdc;
+                        .video-title-mark{
+                            transform: rotate(-90deg)
+                        }
+                    }
+                }
+                .video-coures-right{
+                    margin-left: 29px;
+                    width: 230px;
+                    .video-right-information{
+                        height: 330px;
+                        border-bottom: 1px solid #f5f5f5;
+                        .video-information-title{
+                            font-size: 16px;
+                            color: #333333;
+                            font-weight: 600;
+                            margin-bottom: 12px;
+                        }
+                        .video-information-text{
+                            font-size: 12px;
+                            color: #999999;
+                            line-height: 20px;
+                        }
+                        .video-information-text-font{
+                            font-size: 12px;
+                            color: #333333;
+                            line-height: 20px;
+                            margin-bottom: 15px;
+                            letter-spacing: 0px;
+                        }
+                        .height-30{
+                            margin-bottom: 10px;
+                        }
+                        .video-information-number{
+                            font-size: 11px;
+                            color: #666666;
+                            letter-spacing: 0px;
+                            margin-left: 10px;
+                        }
+                        .video-information-tag{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            .video-tag-item{
+                                height: 20px;
+                                background-color: #f7f7f7;
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: #8a8a8a;
+                                margin: 5px;
+                                padding: 0 5px 0 5px;
+                                border-radius: 5px;
+                            }
+                            .video-tag-item:hover{
+                                background-color: #e4e4e4
+                            }
+                        }
+                    }
+                    .video-right-interflow{
+                        .video-inter-title{
+                            font-size: 16px;
+                            color: #333333;
+                            line-height: 50px;
+                            margin-bottom: 5px;
+                        }
+                        .video-inter-twitter{
+                            display: flex;
+                            .video-twitter-image{
+                                width: 45px;
+                                height: 45px;
+                                border: 1px solid#ff7455;
+                                border-radius: 50%;
+                                text-align: center;
+                                line-height: 50px;
+                            }
+                            .video-twitter-font{
+                                font-size: 12px;
+                                color: #666666;
+                                line-height: 45px;
+                                margin-left: 10px;
+                            }
+                        }
+                        .video-inter-qq{
+                            display: flex;
+                            margin-top: 15px;
+                            .video-qq-image{
+                                width: 45px;
+                                height: 45px;
+                                border: 1px solid#06aaff;
+                                border-radius: 50%;
+                                text-align: center;
+                                line-height: 52px;
+                            }
+                            .video-qq-item{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 10px;
+                                position: relative;
+                                .video-item-font{
+                                    font-size: 12px;
+                                    color: #666666;
+                                    margin-bottom: 8px;
+                                }
+                                .video-item-link{
+                                    display: flex;
+                                    .video-link-join{
+                                        height: 22px;
+                                        background-color: #00b1ff;
+                                        border-radius: 2px;
+                                        font-size: 12px;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        line-height: 22px;
+                                        padding: 0 12px;
+                                        margin-right: 10px;
+                                    }
+                                    .qrcode:hover + .video-link-qrcode{
+                                        display: block;
+                                    }
+                                    .video-link-qrcode{
+                                        display: none;
+                                        position: absolute;
+                                        top: 50px;
+                                        left: -15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .teacher-section{
+        padding-top: 10px;
+        .teacher-container{
+            width: 960px;
+            height: 355px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-top: 10px;
+            .teacher-title{
+                position: relative;
+                margin-bottom: 50px;
+                img{
+                    width: 140px;
+                }
+                .teacher-title-item{
+                    position: absolute;
+                    top: -9px;
+                    left: 22px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #153188;
+                }
+                .teacher-title-describe{
+                    position: absolute;
+                    top: 17px;
+                    left: 20px;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+            .teacher-content{
+                margin: 40px auto 50px auto;
+                position: relative;
+                .teacher-list{
+                    display: flex;
+                    position: absolute;
+                    left: -240px;
+                    width: 960px;
+                    margin: 0 auto;
+                    .teacher-item{
+                        flex: none;
+                        width: 240px;
+                        height: 210px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        .teacher-item-image{
+                            margin-top: 12px;
+                            width: 78px;
+                            height: 78px;
+                        }
+                        .teacher-item-name{
+                            font-size: 14px;
+                            color: #333333;
+                            line-height: 30px;
+                        }
+                        .teacher-item-describe{
+                            font-size: 12px;
+                            color: #999999;
+                            line-height: 18px;
+                        }
+                        .teacher-item-content{
+                            margin-top: 10px;
+                            padding: 0 22px 0 22px;
+                            font-size: 12px;
+                            color: #666666;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .teacher-btn{
+                    position: absolute;
+                    top: 85px;
+                    width: 25px;
+                    height:40px;
+                    background-color: #e2e6ea;
+                    font-size:30px;
+                    color: #f5f5f5;
+                    line-height:37px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .teacher-btn-right{
+                    right: 0;
+                }
+                .teacher-btn:hover{
+                    background-color: #b1bdc6;
+                }
+            }
+        }
+    }
+    .product-section{
+        padding-top:10px;
+        .product-container{
+            width: 960px;
+            margin: 0 auto;
+            .product-title{
+                position: relative;
+                margin-bottom: 30px;
+                img{
+                    width:320px;
+                }
+                .product-title-item{
+                    position: absolute;
+                    top: -9px;
+                    left: 22px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #153188;
+                }
+                .product-title-describe{
+                    position: absolute;
+                    top: 17px;
+                    left: 20px;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+            .product-main{
+                padding-bottom: 30px;
+                border-bottom: 1px solid #f5f5f5;
+                display: flex;
+                .product-main-image{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 210px;
+                    width: 300px;
+                    background-color:#ededed;
+                    margin-right: 20px;
+                }
+                .product-main-text{
+                    display: flex;
+                    flex-direction: column;
+                    width: 640px;
+                    .product-text-title{
+                        font-size: 20px;
+                        color: #333333;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                    }
+                    .product-text-font{
+                        font-size: 13px;
+                        color: #666666;
+                        line-height: 22px;
+                    }
+                    .product-text-buy{
+                        display: flex;
+                        margin: 20px 0;
+                        .product-buy-now{
+                            height: 40px;
+                            width: 130px;
+                            background-color: #00a8ff;
+                            border-radius: 2px;
+                            font-size: 15px;
+                            color: #ffffff;
+                            line-height: 40px;
+                            text-align: center;
+                            margin-right: 15px;
+                        }
+                        .product-buy-more{
+                            height: 40px;
+                            width: 130px;
+                            border: 1px solid #00a8ff;
+                            border-radius: 2px;
+                            font-size: 15px;
+                            color: #00a8ff;
+                            line-height: 40px;
+                            text-align: center;
+                        }
+                    }
+                    .product-text-related{
+                        display: flex;
+                        .product-related-title{
+                            font-size: 15px;
+                            color: #666666;
+                            margin-right: 10px;
+                            line-height: 30px;
+                        }
+                        .product-related{
+                            height: 30px;
+                            background-color: #caeaef;
+                            margin-right: 10px;
+                            border-radius: 15px;
+                            font-size: 12px;
+                            color: #1c7c89;
+                            line-height: 30px;
+                            padding: 0 18px;
+                        }
+                    }
+                }
+            }
+            .product-manual{
+                display: flex;
+                padding: 29px 0;
+                margin-bottom: 30px;
+                border-bottom: 1px solid #f5f5f5;
+                .product-manual-item{
+                    margin-right: 30px;
+                    position: relative;
+                    .product-item-text{
+                        position: absolute;
+                        top: 30%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 16px;
+                        color: #ffffff;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .about-section{
+        padding-top: 10px;
+        .about-container{
+            width: 960px;
+            margin: 0 auto;
+            .about-title{
+                position: relative;
+                margin-bottom: 50px;
+                .about-title-image{
+                    width: 210px;
+                }
+                .about-title-item{
+                    position: absolute;
+                    top: -9px;
+                    left: 22px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #153188;
+                }
+                .about-title-describe{
+                    position: absolute;
+                    top: 17px;
+                    left: 20px;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+            .about-content{
+                display: flex;
+                margin-bottom: 60px;
+                .about-content-item{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    .about-item-image{
+                        width: 145px;
+                        height: 145px;
+                    }
+                    .about-item-text{
+                        position: absolute;
+                        top: 25%;
+                    }
+                    .about-item-title{
+                        font-size: 14px;
+                        color: #333333;
+                        margin: 20px 0 10px 0;
+                    }
+                    .about-item-describe{
+                        font-size: 12px;
+                        color: #999999;
+                    }
+                    .about-item-join{
+                        width: 90px;
+                        height: 32px;
+                        border-radius: 2px;
+                        background-color: #00a8ff;
+                        font-size: 14px;
+                        color: #ffffff;
+                        text-align: center;
+                        line-height: 32px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.head-page {
+  width: 960px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+}
+.head-page .head-logo {
+  flex: 1;
+}
+.head-page .uesr {
+  font-size: 12px;
+  color: #666666;
+  line-height: 70px;
+}
+.head-page .head-uesr {
+  margin: 0 12px;
+}
+.body-page .banner-section {
+  background-image: url(../img/qualcomm-banner-Bg.png);
+  height: 425px;
+}
+.body-page .banner-section .banner-container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.body-page .banner-section .banner-container .banner-image {
+  margin-top: 120px;
+}
+.body-page .banner-section .banner-container .banner-describe {
+  position: absolute;
+  top: 28%;
+  font-size: 22px;
+  color: #61aceb;
+}
+.body-page .banner-section .banner-container .banner-title {
+  position: absolute;
+  top: 40%;
+  font-size: 40px;
+  color: #ffffff;
+}
+.body-page .banner-section .banner-container .banner-logo {
+  margin: 20px 40px 0 0;
+  display: flex;
+}
+.body-page .banner-section .banner-container .banner-logo .banner-logo-mark {
+  width: 1px;
+  height: 30px;
+  background-color: #ffffff;
+  margin: 0 15px;
+}
+.body-page .navigation-section {
+  background-color: rgba(21, 49, 136, 0.95);
+  height: 70px;
+}
+.body-page .navigation-section .navigation-container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+.body-page .navigation-section .navigation-container .navigation-item {
+  width: 192px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.body-page .navigation-section .navigation-container .navigation-item.active {
+  background-color: #374d92;
+}
+.body-page .navigation-section .navigation-item:hover {
+  background-color: #2d4694;
+}
+.body-page .navigation-section.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.body-page .introduction-section {
+  margin: 60px 0;
+  width: 100%;
+  padding-top: 10px;
+}
+.body-page .introduction-section .introduction-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.body-page .introduction-section .introduction-container .introduction-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+.body-page .introduction-section .introduction-container .introduction-title img {
+  width: 140px;
+}
+.body-page .introduction-section .introduction-container .introduction-title .introduction-title-item {
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #153188;
+}
+.body-page .introduction-section .introduction-container .introduction-title .introduction-title-describe {
+  position: absolute;
+  top: 17px;
+  left: 22px;
+  font-size: 14px;
+  color: #999999;
+}
+.body-page .introduction-section .introduction-container .introduction-text {
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+.body-page .video-section {
+  padding-top: 10px;
+}
+.body-page .video-section .video-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.body-page .video-section .video-container .video-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+.body-page .video-section .video-container .video-title img {
+  width: 140px;
+}
+.body-page .video-section .video-container .video-title .video-title-item {
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #153188;
+}
+.body-page .video-section .video-container .video-title .video-title-describe {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  font-size: 14px;
+  color: #999999;
+}
+.body-page .video-section .video-container .video-content {
+  height: 540px;
+  margin-bottom: 8px;
+}
+.body-page .video-section .video-container .video-course-title {
+  font-size: 18px;
+  color: #333333;
+  line-height: 50px;
+}
+.body-page .video-section .video-container .video-course-describe {
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 20px;
+}
+.body-page .video-section .video-container .video-course {
+  display: flex;
+  margin-bottom: 60px;
+}
+.body-page .video-section .video-container .video-course .video-course-left {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 40px;
+  border-top: 1px solid #e4e4e4;
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title .video-title-mark {
+  width: 16px;
+  height: 9px;
+  margin: 0px 12px 0 22px;
+  transform: rotate(0deg);
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title .video-title-font {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  flex: 1;
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-title .video-title-download {
+  width: 16px;
+  height: 15px;
+  margin-right: 20px;
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-text .video-text-item {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 12px;
+  color: #666666;
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-text .video-text-item .video-text-font {
+  margin-left: 50px;
+  flex: 1;
+}
+.body-page .video-section .video-container .video-course .video-course-left .video-course-item .video-item-text .video-text-item .video-text-time {
+  margin-right: 20px;
+}
+.body-page .video-section .video-container .video-course .video-course-left .active .video-item-title {
+  background-color: #dddcdc;
+}
+.body-page .video-section .video-container .video-course .video-course-left .active .video-item-title .video-title-mark {
+  transform: rotate(-90deg);
+}
+.body-page .video-section .video-container .video-course .video-coures-right {
+  margin-left: 29px;
+  width: 230px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information {
+  height: 330px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-title {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-text {
+  font-size: 12px;
+  color: #999999;
+  line-height: 20px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-text-font {
+  font-size: 12px;
+  color: #333333;
+  line-height: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .height-30 {
+  margin-bottom: 10px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-number {
+  font-size: 11px;
+  color: #666666;
+  letter-spacing: 0px;
+  margin-left: 10px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-tag {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-tag .video-tag-item {
+  height: 20px;
+  background-color: #f7f7f7;
+  font-size: 12px;
+  line-height: 20px;
+  color: #8a8a8a;
+  margin: 5px;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-information .video-information-tag .video-tag-item:hover {
+  background-color: #e4e4e4;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-title {
+  font-size: 16px;
+  color: #333333;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-twitter {
+  display: flex;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-twitter .video-twitter-image {
+  width: 45px;
+  height: 45px;
+  border: 1px solid#ff7455;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-twitter .video-twitter-font {
+  font-size: 12px;
+  color: #666666;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq {
+  display: flex;
+  margin-top: 15px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-image {
+  width: 45px;
+  height: 45px;
+  border: 1px solid#06aaff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 52px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  position: relative;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-font {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link {
+  display: flex;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .video-link-join {
+  height: 22px;
+  background-color: #00b1ff;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 22px;
+  padding: 0 12px;
+  margin-right: 10px;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .qrcode:hover + .video-link-qrcode {
+  display: block;
+}
+.body-page .video-section .video-container .video-course .video-coures-right .video-right-interflow .video-inter-qq .video-qq-item .video-item-link .video-link-qrcode {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -15px;
+}
+.body-page .teacher-section {
+  padding-top: 10px;
+}
+.body-page .teacher-section .teacher-container {
+  width: 960px;
+  height: 355px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.body-page .teacher-section .teacher-container .teacher-title {
+  position: relative;
+  margin-bottom: 50px;
+}
+.body-page .teacher-section .teacher-container .teacher-title img {
+  width: 140px;
+}
+.body-page .teacher-section .teacher-container .teacher-title .teacher-title-item {
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #153188;
+}
+.body-page .teacher-section .teacher-container .teacher-title .teacher-title-describe {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+.body-page .teacher-section .teacher-container .teacher-content {
+  margin: 40px auto 50px auto;
+  position: relative;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-list {
+  display: flex;
+  position: absolute;
+  left: -240px;
+  width: 960px;
+  margin: 0 auto;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-list .teacher-item {
+  flex: none;
+  width: 240px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-list .teacher-item .teacher-item-image {
+  margin-top: 12px;
+  width: 78px;
+  height: 78px;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-list .teacher-item .teacher-item-name {
+  font-size: 14px;
+  color: #333333;
+  line-height: 30px;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-list .teacher-item .teacher-item-describe {
+  font-size: 12px;
+  color: #999999;
+  line-height: 18px;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-list .teacher-item .teacher-item-content {
+  margin-top: 10px;
+  padding: 0 22px 0 22px;
+  font-size: 12px;
+  color: #666666;
+  line-height: 18px;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-btn {
+  position: absolute;
+  top: 85px;
+  width: 25px;
+  height: 40px;
+  background-color: #e2e6ea;
+  font-size: 30px;
+  color: #f5f5f5;
+  line-height: 37px;
+  text-align: center;
+  cursor: pointer;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-btn-right {
+  right: 0;
+}
+.body-page .teacher-section .teacher-container .teacher-content .teacher-btn:hover {
+  background-color: #b1bdc6;
+}
+.body-page .product-section {
+  padding-top: 10px;
+}
+.body-page .product-section .product-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.body-page .product-section .product-container .product-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+.body-page .product-section .product-container .product-title img {
+  width: 320px;
+}
+.body-page .product-section .product-container .product-title .product-title-item {
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #153188;
+}
+.body-page .product-section .product-container .product-title .product-title-describe {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+.body-page .product-section .product-container .product-main {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+}
+.body-page .product-section .product-container .product-main .product-main-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+  width: 300px;
+  background-color: #ededed;
+  margin-right: 20px;
+}
+.body-page .product-section .product-container .product-main .product-main-text {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-title {
+  font-size: 20px;
+  color: #333333;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-font {
+  font-size: 13px;
+  color: #666666;
+  line-height: 22px;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-buy {
+  display: flex;
+  margin: 20px 0;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-buy .product-buy-now {
+  height: 40px;
+  width: 130px;
+  background-color: #00a8ff;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 15px;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-buy .product-buy-more {
+  height: 40px;
+  width: 130px;
+  border: 1px solid #00a8ff;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #00a8ff;
+  line-height: 40px;
+  text-align: center;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-related {
+  display: flex;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-related .product-related-title {
+  font-size: 15px;
+  color: #666666;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.body-page .product-section .product-container .product-main .product-main-text .product-text-related .product-related {
+  height: 30px;
+  background-color: #caeaef;
+  margin-right: 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #1c7c89;
+  line-height: 30px;
+  padding: 0 18px;
+}
+.body-page .product-section .product-container .product-manual {
+  display: flex;
+  padding: 29px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.body-page .product-section .product-container .product-manual .product-manual-item {
+  margin-right: 30px;
+  position: relative;
+}
+.body-page .product-section .product-container .product-manual .product-manual-item .product-item-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.body-page .about-section {
+  padding-top: 10px;
+}
+.body-page .about-section .about-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.body-page .about-section .about-container .about-title {
+  position: relative;
+  margin-bottom: 50px;
+}
+.body-page .about-section .about-container .about-title .about-title-image {
+  width: 210px;
+}
+.body-page .about-section .about-container .about-title .about-title-item {
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #153188;
+}
+.body-page .about-section .about-container .about-title .about-title-describe {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+.body-page .about-section .about-container .about-content {
+  display: flex;
+  margin-bottom: 60px;
+}
+.body-page .about-section .about-container .about-content .about-content-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.body-page .about-section .about-container .about-content .about-content-item .about-item-image {
+  width: 145px;
+  height: 145px;
+}
+.body-page .about-section .about-container .about-content .about-content-item .about-item-text {
+  position: absolute;
+  top: 25%;
+}
+.body-page .about-section .about-container .about-content .about-content-item .about-item-title {
+  font-size: 14px;
+  color: #333333;
+  margin: 20px 0 10px 0;
+}
+.body-page .about-section .about-container .about-content .about-content-item .about-item-describe {
+  font-size: 12px;
+  color: #999999;
+}
+.body-page .about-section .about-container .about-content .about-content-item .about-item-join {
+  width: 90px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #00a8ff;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 15px;
+}
